@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador de texto - Alura Challenges ONE</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="style.css">
+
+        <!--Tipografia-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ysabeau:ital,wght@1,1&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="logoalura">
+                <img src="imagenes/logo-alura.png" alt="Logo Alura">
+            </h1>
+        </header>
+
+        <main>
+            <form class="parteizquierda">
+                <textarea class="input-text" cols="20" rows="3" placeholder="Ingre el texto aquí" onkeypress="return validar(event)" required></textarea>
+
+                <fieldset class="indicar">
+                    <img src="imagenes/icono-exclamacion.png" alt=" Signo de Exclamacion">
+                    <p class="textoindicar">Solo letras minúsculaz sin acentación y caracteres númericos y especiales.</p>
+                </fieldset>
+
+                <fieldset class="botones">
+                    <input class="botonencriptar"  type="button" type="submit" value="Encriptar" onclick="resultadoencriptar()">
+
+                    <input class="botondesencriptar"  type="button" type="submit" value="Desencriptar" onclick="resultadodesencriptar()">
+                </fieldset>
+            </form>
+
+            <div class="partederecha">
+                <div class="instruccion">
+                    <img src="imagenes/chopper.png" alt="Logo de OnePiece">
+
+                    <div class="mensajes">
+                        <h2>Ningún mensaje fue enontrado</h2>
+                        <p>Ingrese el texto de desea encriptar o desiencriptar</p>
+                    </div>
+                </div>
+
+                <form class="mensaje">
+                    <textarea class="output-text" cols="15" rows="8" readonly></textarea>
+                    <input class="botoncopiar" type="button" value="Copiar" onclick="copiar()">
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy Copyright 2023</p>
+            <p>|</p>
+            <p>Oracle+AluraLatam.</p>
+            <p>|</p>
+            <p>Jamir Martínez</p>
+            <a href="https://instagram.com/jamir_0502?igshid=ZDdkNTZiNTM=" target="_blank" rel="noopener noreferrer"><img src="imagenes/instagram.png" class="pgn" alt="icono Instagram"></a>
+            <a href="https://www.linkedin.com/in/jamir-mart%C3%ADnez-6923a626b/" target="_blank" rel="noopener noreferrer"><img src="imagenes/linkedin.png" class="pgn" alt="icono Linkedin"></a>
+        </footer>
+        <script src="javascript.js"></script>
+    </body>
+</html>
